@@ -52,4 +52,19 @@ int  findAvailableBed(int wardIndex);
 int  getWardIndexById(int id);
 int  getSpecialtyIndexById(int id);
 
+
+extern char patientName[MAXPATIENTS][50];
+extern int  patientAge[MAXPATIENTS];
+extern int  urgencyLevel[MAXPATIENTS];
+extern int  assignedSpecialty[MAXPATIENTS];
+extern int  isAdmitted[MAXPATIENTS];
+extern int  assignedWard[MAXPATIENTS];
+extern int  assignedBed[MAXPATIENTS];
+extern int  daysAdmitted[MAXPATIENTS];
+
+extern int totalPatients;
+
+
+void registerPatient(void);
+
 #endif

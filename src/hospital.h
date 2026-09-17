@@ -67,4 +67,9 @@ extern int totalPatients;
 
 void registerPatient(void);
 
+double calculateSurcharge(double fee, int urgency);
+double calculateWardCost(int wardIdx, int days);
+double calculateDiscount(int age, double grossTotal);
+void generateBill(int patientIndex);
+
 #endif

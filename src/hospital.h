@@ -72,4 +72,7 @@ double calculateWardCost(int wardIdx, int days);
 double calculateDiscount(int age, double grossTotal);
 void generateBill(int patientIndex);
 
+void sortByPriority(void);
+void generateReports(void);
+
 #endif

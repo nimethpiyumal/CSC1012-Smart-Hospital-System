@@ -36,11 +36,11 @@ intake, bed allocation, emergency triage sorting, and billing estimation.
 ## Project Structure
 
 
-main.c           Interactive menu loop & system entry
-hospital.c       Lookup data & bed status matrix initialization
-hospital.h       Central header file with prototypes & constants
-patient.c        Patient intake and registration logic
-billing.c        Fee, surcharge, discount, & invoice calculations
-sorting.c        Bubble sort priority queue implementation
-reports.c        Hospital statistics & summary reports
-README.md        Project documentation
+main.c      -      Interactive menu loop & system entry
+hospital.c  -     Lookup data & bed status matrix initialization
+hospital.h  -     Central header file with prototypes & constants
+patient.c   -     Patient intake and registration logic
+billing.c   -     Fee, surcharge, discount, & invoice calculations
+sorting.c   -     Bubble sort priority queue implementation
+reports.c   -     Hospital statistics & summary reports
+README.md   -    Project documentation

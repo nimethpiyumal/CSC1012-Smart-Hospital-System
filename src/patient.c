@@ -30,8 +30,14 @@ void registerPatient(void) {
     fgets(patientName[i], 50, stdin);
     patientName[i][strcspn(patientName[i], "\n")] = 0;
 
+
+do {
     printf("Enter Patient Age: ");
     scanf("%d", &patientAge[i]);
+    if (patientAge[i] < 0 ) {
+        printf("Invalid age! Please enter a value greater than 0 \n");
+    }
+} while (patientAge[i] < 0 );
 
     do {
         printf("Enter Triage/Urgency Level (1 = Normal, 2 = Urgent, 3 = Critical): ");

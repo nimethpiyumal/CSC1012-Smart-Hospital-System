@@ -66,3 +66,4 @@ void generateReports(void) {
         printf("\nHighest Paying Patient   : %s (LKR %.2f)\n",
                patientName[highestBillPatientIdx], highestBill);
     }
+}

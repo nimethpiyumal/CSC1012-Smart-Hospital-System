@@ -75,4 +75,6 @@ void generateBill(int patientIndex);
 void sortByPriority(void);
 void generateReports(void);
 
+
+
 #endif

@@ -17,7 +17,6 @@ intake, bed allocation, emergency triage sorting, and billing estimation.
 4. Priority-based Patient Sorting (Urgency Level)
 5. Formatted Bill Generation
 6. Performance Reports & Analytics
-7. File Handling (bed status + patient records persistence)
 
 ## Data Structures (Parallel Arrays)
 - Doctor specialty lookup arrays (ID, name, fee, consult time, daily cap)
@@ -27,14 +26,21 @@ intake, bed allocation, emergency triage sorting, and billing estimation.
 
 ## Planned Functions
 - `registerPatient()`
-- `calculateWaitTime()`
 - `calculateSurcharge()`
 - `calculateWardCost()`
 - `calculateDiscount()`
 - `generateBill()`
 - `sortByPriority()`
 - `generateReports()`
-- `saveBedStatus()` / `loadBedStatus()`
-- `savePatientRecord()`
 
 ## Project Structure
+
+
+main.c           Interactive menu loop & system entry
+hospital.c       Lookup data & bed status matrix initialization
+hospital.h       Central header file with prototypes & constants
+patient.c        Patient intake and registration logic
+billing.c        Fee, surcharge, discount, & invoice calculations
+sorting.c        Bubble sort priority queue implementation
+reports.c        Hospital statistics & summary reports
+README.md        Project documentation
